@@ -184,13 +184,17 @@ main{
     margin-bottom: 70px;
 }
 
-.product1{
+.product1,.product3{
     display: flex;
     justify-content: center;
 }
 
+.product3{
+    margin-bottom: 100px;
+}
 
-.product1-container{
+
+.product1-container,.product3-container{
     display: flex;
     flex-direction: row;
     width: 1140px;
@@ -213,16 +217,16 @@ main{
     margin-left: 25px;
 }
 
-.product1-left{
+.product1-left,.product3-left{
     padding: 16px 15px 0;
 }
 
 
-.product1-right{
+.product1-right,.product3-right{
     display: flex;
 }
 
-.product1-right-left{
+.product1-right-left,.product3-right-left{
     margin-top: 120px;
     position: relative;
     left: 100px
@@ -251,4 +255,97 @@ main{
 
 .product2-right{
     margin: 90px 0 48px 95px;
+}
+
+.clock{
+    background-color: #ebf7ff;
+    height: 455px   ;
+}
+
+.sale-text{
+    color:#DC3545;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+.sale{
+    width: 72px;
+    height: 44px;
+    background-color:#DC3545 ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.shop-now{
+    width: 130px;
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 12px;
+    background-color: transparent;
+    border: 1px solid #212529;
+}
+
+.clock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clock-left{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clock-right{
+    width: 530px;
+    margin-right: 80px;
+}
+
+.counter{
+    width: 540px;
+    height: 110px;
+    background-color: white;
+}
+
+.all-product,.filter-line{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.all-product{
+    margin-top: 100px;
+}
+
+.all-product-container,.filter-line-container{
+    width: 1140px;
+    display: flex;
+    flex-direction: column  ;
+}
+
+.filter-line-container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filter-line-left{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filter-line-right{
+    font-family: Arial, Helvetica, sans-serif;
 }
