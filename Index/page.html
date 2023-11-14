@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Document</title>
 </head>
@@ -23,8 +24,16 @@
                     <p>Free in-store delivery</p>
                 </div>
                 <div class="header-top-right">
-                    <p class = "english">English <i class="fa-solid fa-chevron-down" style="color: #343a40;"></i></p>
-                    <p>USD <i class="fa-solid fa-chevron-down" style="color: #343a40;"></i></p>
+                    <p id = "english">English <i class="fa-solid fa-chevron-down" id = "english-arrow" style="color: #343a40;"></i></p>
+                    <div id = "languages">
+                        <a href="">German</a>
+                        <a href="">French</a>
+                    </div>
+                    <p id = "usd">USD <i class="fa-solid fa-chevron-down" id = "usd-arrow" style="color: #343a40;"></i></p>
+                    <div id = "money">
+                        <a href="">EUR</a>
+                        <a href="">GBP</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -34,6 +43,12 @@
                 <ul class="header-bottom-left">
                     <li>Varkala</li>
                     <li>Home  <i class="fa-solid fa-chevron-down" style="color: #343a40;"></i></li>
+                    <div class="home-list">
+                        <a href="">Home 1 - Fashion</a>
+                        <a href="">Home 2 - Fashion</a>
+                        <a href="">Home 3 - Design <span class="new-icon">New</span></a>
+                        <a href="">Home 4 - Design <span class="new-icon">New</span></a>
+                    </div>
                     <li>Shop <i class="fa-solid fa-chevron-down" style="color: #343a40;"></i></li>
                     <li>Icons <i class="fa-solid fa-chevron-down" style="color: #343a40;"></i></li>
                     <li>Pages <i class="fa-solid fa-chevron-down" style="color: #343a40;"></i></li>
@@ -182,7 +197,7 @@
 
         <div class="products">
             <div class="products-container">
-                <div class = "items">
+                <div class = "items" data-aos="zoom-in">
                     <img class = "item-img-default" src="Images_index/Item1.jpg" alt="" style = "width: 255px;height: 382px;">
                     <img class = "item-img-effect" src="Images_index/chair-2 hover.jpg" alt="" style = "width: 255px;height: 382px;">
                     <div class="add-cart-top">
@@ -239,7 +254,7 @@
                     <p class = "price2">$40.00</p>
                 </div>
 
-                <div class = "items">
+                <div class = "items" >
                     <img class = "item-img-default"  src="Images_index/item5.jpg" alt="" style = "width: 255px;height: 382px;">
                     <img class = "item-img-effect" src="Images_index/item5-effect.jpg" alt="" style = "width: 255px;height: 382px;">
                     <div class="add-cart-bottom">
@@ -410,4 +425,9 @@
         </div>
     </main> 
 </body>
+<script src="index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html> 
