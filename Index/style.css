@@ -627,7 +627,10 @@ main{
     right: 120px;
     width: 160px;
     height: 86px;
-    background-color: rgb(248, 248, 248);
+    background-color: white;
+    box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    -moz-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -643,7 +646,7 @@ main{
     padding: 6.4px 24px;
 }
 
-#english-arrow,#usd-arrow{
+#english-arrow,#usd-arrow,#home-arrow,#docs-arrow,#shop-arrow{
     transition: 0.40s;
 }
 
@@ -653,7 +656,10 @@ main{
     right: 55px;
     width: 160px;
     height: 86px;
-    background-color: rgb(248, 248, 248);
+    background-color: white;
+    box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    -moz-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -669,7 +675,7 @@ main{
     padding: 6.4px 24px;
 }
 
-.home-list{
+#home-list,#docs-list{
     position: absolute;
     top:130px;
     left: 100px;
@@ -683,14 +689,18 @@ main{
     box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
     -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
     -moz-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    display: none;
 }
 
-.home-list a{
+#home-list a,#docs-list a{
     padding-left: 20px;
     text-decoration: none;
     color: #868e96;
     display: flex;
+}
 
+#home-list a:hover,#docs-list a:hover{
+    color: black;
 }
 
 .new-icon{  
@@ -702,4 +712,62 @@ main{
     align-items: center;
     margin-left: 10px;
     padding: 4px;
+}
+
+#docs-list{
+    top: 130px;
+    left: 440px;
+    width: 170px;
+    height: 300px;
+}
+
+.navbar-list{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    -moz-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    height: 100%;
+    top:0px;
+    display: none;
+}
+
+
+#shop-list{
+    position: absolute;
+    display: flex;
+    top: 130px;
+    left: 140px;
+    width: 780px;
+    height: 376px;
+    background-color: white;
+    box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    -moz-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    justify-content: space-between;
+    display: none;
+}
+
+.shop-pages-list li,.product-pages-list li{
+    list-style: none;
+    color: #868e96;
+}
+
+.shop-pages-list li:hover ,.product-pages-list li:hover{
+    color: black;
+}
+
+.shop-pages-list h6,.product-pages-list h6{
+    font-size: 15px;
+}
+
+.shop-pages-list ,.product-pages-list{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 100%;
+    margin-top: 45px;
+    margin-left: 25px;
 }

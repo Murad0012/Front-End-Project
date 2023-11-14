@@ -1,19 +1,21 @@
 const english = document.getElementById("english")
 const languages = document.getElementById("languages")
 const englishArrow = document.getElementById("english-arrow")
+
 const usd = document.getElementById("usd")
 const money = document.getElementById("money")
 const usdArrow = document.getElementById("usd-arrow")
+
 let upEnglish = true;
 let upUSD = true;
 
-english.onclick = function(){
-    if(upEnglish && !upUSD || upEnglish){
+english.onclick = function (){
+    if(upEnglish){
         languages.style.display = "flex"
         englishArrow.style.rotate = "-180deg"
         upEnglish = false
         
-        if(upUSD === false){
+        if(!upUSD){
             money.style.display = "none"
             usdArrow.style.rotate = "0deg"
             upUSD = true;
@@ -32,7 +34,7 @@ usd.onclick = function(){
         usdArrow.style.rotate = "-180deg"
         upUSD = false
 
-        if(upEnglish === false){
+        if(!upEnglish){
             languages.style.display = "none"
             englishArrow.style.rotate = "0deg"
             upEnglish = true;
@@ -44,3 +46,62 @@ usd.onclick = function(){
         upUSD = true;
     }
 }
+
+const home = document.getElementById("home")
+const homeList = document.getElementById("home-list")
+const homeArrow = document.getElementById("home-arrow")
+
+let homeOpen = true
+
+home.onclick = function(){
+    if(homeOpen){
+        homeList.style.display = "flex"
+        homeArrow.style.rotate = "-180deg"
+        homeOpen = false
+    }
+    else{
+        homeList.style.display = "none"
+        homeArrow.style.rotate = "0deg"
+        homeOpen = true;
+    }      
+}
+
+const docs = document.getElementById("docs")
+const docsList = document.getElementById("docs-list")
+const docsArrow = document.getElementById("docs-arrow")
+
+let docsOpen = true
+
+docs.onclick = function(){
+    if(docsOpen){
+        docsList.style.display = "flex"
+        docsArrow.style.rotate = "-180deg"
+        docsOpen = false
+    }
+    else{
+        docsList.style.display = "none"
+        docsArrow.style.rotate = "0deg"
+        docsOpen = true;
+    }      
+}
+
+const shop = document.getElementById("shop")
+const shopList = document.getElementById("shop-list")
+const shopArrow = document.getElementById("shop-arrow")
+
+let shopOpen = true
+
+shop.onclick = function(){
+    if(shopOpen){
+        shopList.style.display = "flex"
+        shopArrow.style.rotate = "-180deg"
+        shopOpen = false
+    }
+    else{
+        shopList.style.display = "none"
+        shopArrow.style.rotate = "0deg"
+        shopOpen = true;
+    }      
+}
+
+
