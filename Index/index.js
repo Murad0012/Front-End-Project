@@ -124,3 +124,23 @@ page.onclick = function(){
 }
 
 
+const icon = document.getElementById("icon")
+const iconList = document.getElementById("icon-list")
+const iconArrow = document.getElementById("icon-arrow")
+
+let iconOpen = true
+
+icon.onclick = function(){
+    if(iconOpen){
+        iconList.style.display = "flex"
+        iconArrow.style.rotate = "-180deg"
+        iconOpen = false
+    }
+    else{
+        iconList.style.display = "none"
+        iconArrow.style.rotate = "0deg"
+        iconOpen = true;
+    }      
+}
+
+
