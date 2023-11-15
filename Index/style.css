@@ -69,7 +69,7 @@
     align-items: center ;
 }
 
-.input{
+.search{
     display: flex;
     align-items: center;
     border-bottom: 1px solid #343a40;
@@ -131,7 +131,7 @@ input{
     letter-spacing: 0.15em;
 }
 
-.title1,.name1,.name2{
+.title1,.title2-margin-left{
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 0.5rem;
     line-height: 1.3;
@@ -197,7 +197,7 @@ main{
     letter-spacing: 0.3rem;
 }
 
-.shop-now1,.price1,.name1{
+.shop-now1,.price1,.title2-margin-left{
     margin-left: 25px;
 }
 
@@ -556,48 +556,6 @@ main{
     color: black;
 }
 
-.item-img-effect{
-    position: absolute;
-    opacity: 0;
-    transition: 0.40s;
-}
-
-.items:hover .item-img-effect{
-    opacity: 1;
-}
-
-.items:hover .add-cart-top{
-    height: 50px;
-}
-
-.items:hover .add-cart-bottom{
-    height: 50px;
-}
-
-
-.add-cart-top,.add-cart-bottom{
-    display: flex;
-    gap: 120px;
-    align-items: center;
-    background-color: rgba(255,255,255,0.92);
-    width: fit-content;
-    position: absolute;
-    bottom:-3476px;
-    width: 255px;
-    overflow: hidden;
-    height: 0;   
-}
-
-.add-cart-bottom{
-    bottom:-3949px;
-}
-
-.logos{
-    display: flex;
-    gap:10px;
-}
-
-
 .footer-list ul li{
     position: relative;
 }
@@ -685,10 +643,6 @@ main{
     gap: 5px;
     width: 200px;
     height: 160px;
-    background-color: white;
-    box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
-    -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
-    -moz-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
     display: none;
 }
 
@@ -725,10 +679,6 @@ main{
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: white;
-    box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
-    -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
-    -moz-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
     height: 100%;
     top:0px;
     display: none;
@@ -742,10 +692,6 @@ main{
     left: 140px;
     width: 780px;
     height: 376px;
-    background-color: white;
-    box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
-    -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
-    -moz-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
     justify-content: space-between;
     display: none;
 }
@@ -781,10 +727,6 @@ main{
     left: 100px;
     width: 1300px;
     height: 650px;
-    background-color: white;
-    box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
-    -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
-    -moz-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
     display: none;
 }
 
@@ -824,10 +766,6 @@ main{
 #icon-list{
     position: absolute;
     top: 130px;
-    background-color: white;
-    box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
-    -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
-    -moz-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -861,4 +799,85 @@ main{
     align-items: center;
     justify-content: center;
     font-size: 15px;
+}
+
+.add-cart{
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    background-color: rgba(255,255,255,0.92);
+    width: fit-content;
+    width: 255px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logos{
+    display: flex;
+    gap:10px;
+}
+
+.item-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-img{
+    position: absolute;
+    right: 7px;
+    opacity: 0;
+}
+
+.default-img , .hover-img{
+    transition: 0.40s;
+}
+
+.item:hover .default-img{
+    opacity: 0;
+}
+
+.item:hover .hover-img{
+    opacity: 1;
+}
+
+
+.add-cart{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.20s;
+}
+
+.item:hover .add-cart{
+    height: 50px;
+}
+
+.item:hover .add-cart{
+    height: 50px;
+}
+
+.product-info{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.price{
+    color: #868e96;
+}
+
+.add-cart-word{
+    margin-left: 8px;
+}
+
+
+#home-list,#docs-list,.navbar-list,#shop-list,#pages,#icon-list{
+    background-color: white;
+    box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    -moz-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    
 }

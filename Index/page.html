@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <title>Document</title>
+    <title>Varkala E-commerce Theme</title>
 </head>
 <body>
     <header>
@@ -24,7 +23,7 @@
                 <div class="header-top-middle">
                     <p>Free in-store delivery</p>
                 </div>
-                <div class="header-top-right">
+                <div class="header-top-right"> 
                     <p id = "english">English <i class="fa-solid fa-chevron-down" id = "english-arrow" style="color: #343a40;"></i></p>
                     <div id = "languages">
                         <a href="">German</a>
@@ -231,14 +230,14 @@
     
                 <ul class = "header-bottom-right">
                     <li>
-                        <div class = "input">
+                        <div class = "search">
                             <input type="text" placeholder="Search">
                             <i class="fa-solid fa-magnifying-glass" style="color: #343a40;padding-right: 10px;"></i>
                         </div>
                     </li>
                     <li><i class="fa-regular fa-user fa-xl" style="color: #343a40;"></i></li>
                     <li><i class="fa-regular fa-heart fa-xl" style="color: #343a40;"></i></li>
-                    <li><i class="fa-solid fa-basket-shopping fa-xl" style="color: #343a40;"></i></li>
+                    <li id = "basket"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #343a40;"></i></li>
                     <li id = "navbar">Navbar</li>
                     <div class = "navbar-list">
                         <h5>Varkala</h5>
@@ -290,13 +289,13 @@
             <div class="product1-container">
                 <div class="product1-left grow-effect">
                     <img src="Images_index/book-sq.jpg" alt="" style="width: 350px;height: 350px;">
-                    <h3 class = "name1">Furniture<br>source<br>book</h3>
+                    <h3 class = "title2-margin-left">Furniture<br>source<br>book</h3>
                     <p class = "price1">$39.90</p>
                     <p class = "shop-now1">SHOP NOW</p>
                 </div>
                 <div class="product1-right grow-effect">
                     <div class = "product1-right-left">
-                        <h2 class = "name2">Norwegg<br>design<br>chair</h2>
+                        <h2 class = "title1">Norwegg<br>design<br>chair</h2>
                         <p class = "price2">$139.90</p>
                         <p class = "shop-now2">SHOP NOW</p>
                     </div>
@@ -309,7 +308,7 @@
             <div class="product2-container">
                 <div class="product2-left grow-effect">
                     <div class="product2-left-left">
-                        <h2 class = "name2">Sunn<br>Clock</h2>
+                        <h2 class = "title1">Sunn<br>Clock</h2>
                         <p class = "price2">$139.90</p>
                         <p class = "shop-now2">SHOP NOW</p>
                     </div>
@@ -318,7 +317,7 @@
 
                 <div class="product2-right grow-effect">
                     <img src="Images_index/box-sq.jpg" alt="" style="width: 350px;height: 350px;">
-                    <h2 class = "name2">ACCESSORY<br>boxes</h2>
+                    <h2 class = "title1">ACCESSORY<br>boxes</h2>
                     <p class = "price2">$29.90</p>
                     <p class = "shop-now2">SHOP NOW</p>
                 </div>             
@@ -329,13 +328,13 @@
             <div class="product3-container">
                 <div class="product3-left grow-effect">
                     <img src="Images_index/clock2-sq.jpg" alt="" style="width: 255px;height: 255px;">
-                    <h3 class = "name1">Swiss<br>Minutes<br>Black</h3>
+                    <h3 class = "title2-margin-left">Swiss<br>Minutes<br>Black</h3>
                     <p class = "price1">$149.90</p>
                     <p class = "shop-now1">SHOP NOW</p>
                 </div>
                 <div class="product3-right grow-effect">
                     <div class = "product3-right-left">
-                        <h2 class = "name2">Korona<br>dinning<br>room chair</h2>
+                        <h2 class = "title1">Korona<br>dinning<br>room chair</h2>
                         <p class = "price2">$139.90</p>
                         <p class = "shop-now2">SHOP NOW</p>
                     </div>
@@ -348,7 +347,7 @@
             <div class="sale-container">
                 <div class="sale-left">
                     <div class="red-text">DEAL OF THE WEEK</div>
-                    <h2 class = "name2">Black and white Nordegg chairs</h2>
+                    <h2 class = "title1">Black and white Nordegg chairs</h2>
                     <div class="prices"><span style = "text-decoration:line-through;">$129.00</span><span>$79.00</span></div>
                     <button class = "sale-button">$50 off</button>    
                     <div class="time"></div>
@@ -363,7 +362,7 @@
 
         <div class="new-arrivals">
             <div class="new-arrivals-container">
-                <h2 class="name2">New Arrivals</h2>
+                <h2 class="title1">New Arrivals</h2>
                 <p class="paragraph" style="width: 1100px;">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections</p>
             </div>
         </div> 
@@ -383,119 +382,167 @@
 
         <div class="products">
             <div class="products-container">
-                <div class = "items" data-aos="zoom-in">
-                    <img class = "item-img-default" src="Images_index/Item1.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <img class = "item-img-effect" src="Images_index/chair-2 hover.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <div class="add-cart-top">
-                        <h4 class="name3" style="margin-left: 6px;">Add to cart</h4>
-                        <div class="logos" >
-                            <i class="fa-regular fa-heart" style="color: #000000;"></i>
-                            <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+
+                <div class="item" data-aos="zoom-in" data-aos-once="true">
+                    <div class="item-img">
+                        <div class="imgs">
+                            <img class = "default-img" src="Images_index/Item1.jpg" alt="" style = "width: 255px;height: 380px;">
+                            <img class = "hover-img" src="Images_index/Item1-hover.jpg" alt="" style = "width: 255px;height: 380px;">
+                        </div>
+                        <div class="add-cart">
+                            <h5 class = "add-cart-word">Add to cart</h5>
+                            <div class="logos">
+                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                            </div>
                         </div>
                     </div>
-                    <h3><a href="" class = "name3">Norwegg Chair</a></h3>
-                    <p class = "price2">$40.00</p>
+                    <div class="product-info">
+                        <h3>Norwegg Chair</h3>
+                        <p class = "price">$40.00</p>
+                    </div>
                 </div>
 
-                <div class = "items">
-                    <img class = "item-img-default"  src="Images_index/item2.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <img class = "item-img-effect" src="Images_index/item2-effect.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <div class="add-cart-top">
-                        <h4 class="name3" style="margin-left: 6px;">Add to cart</h4>
-                        <div class="logos" >
-                            <i class="fa-regular fa-heart" style="color: #000000;"></i>
-                            <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                <div class="item" data-aos="zoom-in" data-aos-once="true">
+                    <div class="item-img">
+                        <div class="imgs">
+                            <img class = "default-img" src="Images_index/Item2.jpg" alt="" style = "width: 255px;height: 380px;">
+                            <img class = "hover-img" src="Images_index/item2-effect.jpg" alt="" style = "width: 255px;height: 380px;">
+                        </div>
+                        <div class="add-cart">
+                            <h5 class = "add-cart-word">Add to cart</h5>
+                            <div class="logos">
+                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                            </div>
                         </div>
                     </div>
-                    <h3><a href="" class = "name3">Book</a></h3>
-                    <p class = "price2">$40.00</p>
+                    <div class="product-info">
+                        <h3>Norwegg Chair</h3>
+                        <p class = "price">$40.00</p>
+                    </div>
                 </div>
 
-
-                <div class = "items">
-                    <img class = "item-img-default"  src="Images_index/item3.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <img class = "item-img-effect" src="Images_index/item3-effect.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <div class="add-cart-top">
-                        <h4 class="name3" style="margin-left: 6px;">Add to cart</h4>
-                        <div class="logos" >
-                            <i class="fa-regular fa-heart" style="color: #000000;"></i>
-                            <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                <div class="item" data-aos="zoom-in" data-aos-once="true">
+                    <div class="item-img">
+                        <div class="imgs">
+                            <img class = "default-img" src="Images_index/Item3.jpg" alt="" style = "width: 255px;height: 380px;">
+                            <img class = "hover-img" src="Images_index/item3-effect.jpg" alt="" style = "width: 255px;height: 380px;">
+                        </div>
+                        <div class="add-cart">
+                            <h5 class = "add-cart-word">Add to cart</h5>
+                            <div class="logos">
+                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                            </div>
                         </div>
                     </div>
-                    <h3><a href="" class = "name3">Another chair</a></h3>
-                    <p class = "price2">$40.00</p>
+                    <div class="product-info">
+                        <h3>Norwegg Chair</h3>
+                        <p class = "price">$40.00</p>
+                    </div>
                 </div>
 
-                <div class = "items">
-                    <img class = "item-img-default"  src="Images_index/item4.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <img class = "item-img-effect" src="Images_index/item4-effect.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <div class="add-cart-top">
-                        <h4 class="name3" style="margin-left: 6px;">Add to cart</h4>
-                        <div class="logos" >
-                            <i class="fa-regular fa-heart" style="color: #000000;"></i>
-                            <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                <div class="item" data-aos="zoom-in" data-aos-once="true">
+                    <div class="item-img">
+                        <div class="imgs">
+                            <img class = "default-img" src="Images_index/Item4.jpg" alt="" style = "width: 255px;height: 380px;">
+                            <img class = "hover-img" src="Images_index/item4-effect.jpg" alt="" style = "width: 255px;height: 380px;">
+                        </div>
+                        <div class="add-cart">
+                            <h5 class = "add-cart-word">Add to cart</h5>
+                            <div class="logos">
+                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                            </div>
                         </div>
                     </div>
-                    <h3><a href="" class = "name3">Your new chair</a></h3>
-                    <p class = "price2">$40.00</p>
+                    <div class="product-info">
+                        <h3>Norwegg Chair</h3>
+                        <p class = "price">$40.00</p>
+                    </div>
                 </div>
 
-                <div class = "items" >
-                    <img class = "item-img-default"  src="Images_index/item5.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <img class = "item-img-effect" src="Images_index/item5-effect.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <div class="add-cart-bottom">
-                        <h4 class="name3" style="margin-left: 6px;">Add to cart</h4>
-                        <div class="logos" >
-                            <i class="fa-regular fa-heart" style="color: #000000;"></i>
-                            <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                <div class="item" data-aos="zoom-in" data-aos-once="true">
+                    <div class="item-img">
+                        <div class="imgs">
+                            <img class = "default-img" src="Images_index/Item5.jpg" alt="" style = "width: 255px;height: 380px;">
+                            <img class = "hover-img" src="Images_index/item5-effect.jpg" alt="" style = "width: 255px;height: 380px;">
+                        </div>
+                        <div class="add-cart">
+                            <h5 class = "add-cart-word">Add to cart</h5>
+                            <div class="logos">
+                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                            </div>
                         </div>
                     </div>
-                    <h3><a href="" class = "name3">Clock</a></h3>
-                    <p class = "price2">$40.00</p>
+                    <div class="product-info">
+                        <h3>Norwegg Chair</h3>
+                        <p class = "price">$40.00</p>
+                    </div>
                 </div>
 
-                <div class = "items">
-                    <img  class = "item-img-default" src="Images_index/item6.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <img class = "item-img-effect" src="Images_index/item6-effect.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <div class="add-cart-bottom">
-                        <h4 class="name3" style="margin-left: 6px;">Add to cart</h4>
-                        <div class="logos" >
-                            <i class="fa-regular fa-heart" style="color: #000000;"></i>
-                            <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                <div class="item" data-aos="zoom-in" data-aos-once="true">
+                    <div class="item-img">
+                        <div class="imgs">
+                            <img class = "default-img" src="Images_index/Item6.jpg" alt="" style = "width: 255px;height: 380px;">
+                            <img class = "hover-img" src="Images_index/item6-effect.jpg" alt="" style = "width: 255px;height: 380px;">
+                        </div>
+                        <div class="add-cart">
+                            <h5 class = "add-cart-word">Add to cart</h5>
+                            <div class="logos">
+                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                            </div>
                         </div>
                     </div>
-                    <h3><a href="" class = "name3">Clock</a></h3>
-                    <p class = "price2">$40.00</p>
+                    <div class="product-info">
+                        <h3>Norwegg Chair</h3>
+                        <p class = "price">$40.00</p>
+                    </div>
                 </div>
 
-                <div class = "items">
-                    <img class = "item-img-default"  src="Images_index/item7.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <img class = "item-img-effect" src="Images_index/item7-effect.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <div class="add-cart-bottom">
-                        <h4 class="name3" style="margin-left: 6px;">Add to cart</h4>
-                        <div class="logos" >
-                            <i class="fa-regular fa-heart" style="color: #000000;"></i>
-                            <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                <div class="item" data-aos="zoom-in" data-aos-once="true">
+                    <div class="item-img">
+                        <div class="imgs">
+                            <img class = "default-img" src="Images_index/Item7.jpg" alt="" style = "width: 255px;height: 380px;">
+                            <img class = "hover-img" src="Images_index/item7-effect.jpg" alt="" style = "width: 255px;height: 380px;">
+                        </div>
+                        <div class="add-cart">
+                            <h5 class = "add-cart-word">Add to cart</h5>
+                            <div class="logos">
+                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                            </div>
                         </div>
                     </div>
-                    <h3><a href="" class = "name3">Accessory box</a></h3>
-                    <p class = "price2">$40.00</p>
+                    <div class="product-info">
+                        <h3>Norwegg Chair</h3>
+                        <p class = "price">$40.00</p>
+                    </div>
                 </div>
 
-                <div class = "items">
-                    <img  class = "item-img-default" src="Images_index/item8.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <img class = "item-img-effect" src="Images_index/item8-effect.jpg" alt="" style = "width: 255px;height: 382px;">
-                    <div class="add-cart-bottom">
-                        <h4 class="name3" style="margin-left: 6px;">Add to cart</h4>
-                        <div class="logos" >
-                            <i class="fa-regular fa-heart" style="color: #000000;"></i>
-                            <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                <div class="item" data-aos="zoom-in" data-aos-once="true">
+                    <div class="item-img">
+                        <div class="imgs">
+                            <img class = "default-img" src="Images_index/Item8.jpg" alt="" style = "width: 255px;height: 380px;">
+                            <img class = "hover-img" src="Images_index/item8-effect.jpg" alt="" style = "width: 255px;height: 380px;">
+                        </div>
+                        <div class="add-cart">
+                            <h5 class = "add-cart-word">Add to cart</h5>
+                            <div class="logos">
+                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                <i class="fa-solid fa-maximize" style="color: #000000;"></i>
+                            </div>
                         </div>
                     </div>
-                    <h3><a href="" class = "name3">Beige</a></h3>
-                    <p class = "price2">$40.00</p>
-                </div>
-            </div>
+                    <div class="product-info">
+                        <h3>Norwegg Chair</h3>
+                        <p class = "price">$40.00</p>
+                    </div>
+                </div>           
+            </div>  
         </div>
 
         <div class="summer-sales">
