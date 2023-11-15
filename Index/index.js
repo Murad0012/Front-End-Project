@@ -104,4 +104,23 @@ shop.onclick = function(){
     }      
 }
 
+const page = document.getElementById("page")
+const pageList = document.getElementById("pages")
+const pageArrow = document.getElementById("page-arrow")
+
+let pageOpen = true
+
+page.onclick = function(){
+    if(pageOpen){
+        pageList.style.display = "flex"
+        pageArrow.style.rotate = "-180deg"
+        pageOpen = false
+    }
+    else{
+        pageList.style.display = "none"
+        pageArrow.style.rotate = "0deg"
+        pageOpen = true;
+    }      
+}
+
 

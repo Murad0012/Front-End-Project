@@ -646,7 +646,7 @@ main{
     padding: 6.4px 24px;
 }
 
-#english-arrow,#usd-arrow,#home-arrow,#docs-arrow,#shop-arrow{
+#english-arrow,#usd-arrow,#home-arrow,#docs-arrow,#shop-arrow,#page-arrow{
     transition: 0.40s;
 }
 
@@ -770,4 +770,53 @@ main{
     height: 100%;
     margin-top: 45px;
     margin-left: 25px;
+}
+
+#pages{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 140px;
+    left: 100px;
+    width: 1300px;
+    height: 650px;
+    background-color: white;
+    box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    -moz-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
+    display: none;
+}
+
+.pages-lists{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    gap: 30px;
+    width: fit-content;
+}
+
+.pages-lists li{
+    list-style: none;
+    color: #868e96;
+}
+
+
+.pages-list-inside{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.pages-list-inside h3{
+    margin-bottom: 5px;
+}
+
+.new-icon-page{
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    color: #bcac76;
+    background-color: #f7f5ef;
 }

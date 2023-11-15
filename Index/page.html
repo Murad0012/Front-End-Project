@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -70,7 +70,81 @@
                         <img src="Images_index/shop-img.jpg" alt="" style="width: 260px;height: 376px;object-fit:cover;">
                     </div>
                     <li>Icons <i class="fa-solid fa-chevron-down" style="color: #343a40;"></i></li>
-                    <li>Pages <i class="fa-solid fa-chevron-down" style="color: #343a40;"></i></li>
+                    <li id = "page">Pages <i class="fa-solid fa-chevron-down" id = "page-arrow" style="color: #343a40;"></i></li>
+                    <div id="pages">
+                        <div class="pages-lists">
+                            <img src="Images_index/megamenu img1.jpg" alt="" style="width: 278px;height: 185px;">
+                            <ul class="pages-list-inside">
+                                <h3>Homepage</h3>
+                                <li>Home 1 - Fashion</li>
+                                <li>Home 2 - Fashion</li>
+                                <li>Home 3 - Design <span class="new-icon-page">New</span></li>
+                                <li>Home 4 - Design <span class="new-icon-page">New</span></li>
+                            </ul>
+                            
+                            <ul class="pages-list-inside">
+                                <h3>Category</h3>
+                                <li>Full width </li>
+                                <li>Full width with category menu </li>
+                                <li>Full width with big products </li>
+                                <li>Fixed width </li>
+                                <li>Fixed width & masonry layout <span class="new-icon-page">New</span></li>
+                                <li>Subcategories </li>
+                            </ul>
+                        </div>
+
+                        <div class="pages-lists">
+                            <img src="Images_index/megamenu img2.jpg" alt="" style="width: 278px;height: 185px;">
+                            <ul class="pages-list-inside">
+                                <h3>Order process</h3>
+                                <li>Shopping cart</li>
+                                <li>Checkout - Five steps <span class="new-icon-page">New</span></li>
+                                <li>Checkout - Single-page</li>
+                                <li>Checkout - confirmed</li>
+                                <li>Wishlist</li>
+                            </ul>
+                            
+                            <ul class="pages-list-inside">
+                                <h3>Product</h3>
+                                <li>Product with sticky info</li>
+                                <li>Product with background</li>
+                                <li>Product standard</li>
+                            </ul>
+                        </div>
+
+                        <div class="pages-lists">
+                            <img src="Images_index/megamenu img3.jpg" alt="" style="width: 278px;height: 185px;">
+                            <ul class="pages-list-inside">
+                                <h3>Blog</h3>
+                                <li>Blog</li>
+                                <li>Blog - Masonry</li>
+                                <li>Post</li>
+                            </ul>
+                            
+                            <ul class="pages-list-inside">
+                                <h3>Pages</h3>
+                                <li>About - Company <span class="new-icon-page">New</span></li>
+                                <li>About v.2 - Person <span class="new-icon-page">New</span></li>
+                                <li>F.A.Q. <span class="new-icon-page">New</span></li>
+                                <li>Contact</li>
+                                <li>Privacy policy <span class="new-icon-page">New</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="pages-lists">
+                            <img src="Images_index/megamenu img4.jpg" alt="" style="width: 278px;height: 185px;">
+                            <ul class="pages-list-inside">
+                                <h3>Customer <span class="new-icon-page">New</span></h3>
+                                <li>Login/sign up <span class="new-icon-page">New</span></li>
+                                <li>Orders <span class="new-icon-page">New</span></li>
+                                <li>Order detail <span class="new-icon-page">New</span></li>
+                                <li>Order tracking <span class="new-icon-page">New</span></li>
+                                <li>Addresses <span class="new-icon-page">New</span></li>
+                                <li>Profile <span class="new-icon-page">New</span></li>
+                                <li>Wishlist <span class="new-icon-page">New</span></li>
+                            </ul>
+                        </div>
+                    </div>
                     <li id = "docs">Docs <i class="fa-solid fa-chevron-down" id = "docs-arrow" style="color: #343a40;"></i></li>
                     <div id = "docs-list">
                         <a href="">Introduction </a>
@@ -114,6 +188,7 @@
     <main>
         <div class="slide">
             <div class = "slide-container">
+
                 <div class="slide-container-left">
                     <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style = "position: absolute; z-index: -1;right:1200px;top:-200px;width:800px;height:800px">
                         <path fill="#e0d4ab" d="M421,318.5Q366,397,279.5,420.5Q193,444,121,388Q49,332,72,251Q95,170,143,96.5Q191,23,251,87Q311,151,393.5,195.5Q476,240,421,318.5Z" />
@@ -466,8 +541,4 @@
     </main> 
 </body>
 <script src="index.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
 </html> 
