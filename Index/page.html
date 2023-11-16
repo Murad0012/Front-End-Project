@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Varkala E-commerce Theme</title>
 </head>
@@ -256,26 +257,60 @@
     </header>
 
     <main>
-        <div class="slide">
-            <div class = "slide-container">
+            <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style = "position: absolute; z-index: -1;right:1200px;top:-200px;width:800px;height:800px">
+                <path fill="#e0d4ab" d="M421,318.5Q366,397,279.5,420.5Q193,444,121,388Q49,332,72,251Q95,170,143,96.5Q191,23,251,87Q311,151,393.5,195.5Q476,240,421,318.5Z" />
+            </svg>
+            
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="slide">
+                        <div class="slide-left">
+                            <p class = "text">TIME IS ALMOST UP</p>
+                            <h2 class = "title">Design clocks on sale</h2>
+                            <button class = "start-shopping button-light-effect">START SHOPPING</button>
+                        </div>
 
-                <div class="slide-container-left">
-                    <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style = "position: absolute; z-index: -1;right:1200px;top:-200px;width:800px;height:800px">
-                        <path fill="#e0d4ab" d="M421,318.5Q366,397,279.5,420.5Q193,444,121,388Q49,332,72,251Q95,170,143,96.5Q191,23,251,87Q311,151,393.5,195.5Q476,240,421,318.5Z" />
-                    </svg>
-                    <p class = "text">TIME IS ALMOST UP</p>
-                    <h2 class = "title">Design clocks on sale</h2>
-                    <button class = "start-shopping button-light-effect">START SHOPPING</button>
+                        <div class="slide-right">                          
+                            <img src="Images_index/clock-transparent.png" alt="" style="width: 300px;height: 500px;object-fit: contain;">
+                        </div>
+                    </div>                   
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slide">
+                        <div class="slide-left">
+                            <p class = "text">OUR ALL-TIME FAVOURITES</p>
+                            <h2 class = "title">Black & White</h2>
+                            <p class = "paragraph" style="margin-top: 15px;">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit</p>
+                            <button class = "start-shopping button-light-effect">DISCOVER MORE</button>
+                        </div>
+
+                        <div class="slide-right">                          
+                            <img src="Images_index/silder-img.png" alt="" style="width: 300px;height: 500px;object-fit: contain;">
+                        </div>
+                    </div> 
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slide">
+                        <div class="slide-left">
+                            <p class = "text">OUR ALL-TIME FAVOURITES</p>
+                            <h2 class = "title">Boxxez</h2>
+                            <p class = "paragraph" style="margin-top: 15px;">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit</p>
+                            <button class = "start-shopping button-light-effect">DISCOVER MORE</button>
+                        </div>
+
+                        <div class="slide-right">                          
+                            <img src="Images_index/slide-img3.png" alt="" style="width: 300px;height: 500px;object-fit: contain;">
+                        </div>
+                    </div> 
+                  </div>
+                  ...
                 </div>
-                
-                <div class="slide-container-right">
-                    <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style = "position: absolute; z-index: -1;">
-                        <path fill="#e7eaf9" d="M383,329.5Q298,419,174,398.5Q50,378,73,257Q96,136,204,77Q312,18,390,129Q468,240,383,329.5Z" />
-                    </svg>
-                    <img src="Images_index/clock-transparent.png" alt="" style="width: 300px;height: 500px;object-fit: contain;margin-right: 250px;">
-                </div>
-            </div>
-        </div>
+                <div class="swiper-pagination"></div>
+              </div>
 
         <div class="top-choices">
             <div class="top-choices-container">
@@ -658,9 +693,11 @@
         </div>
     </main> 
 </body>
-<script src="index.js"></script>
+<script src="Js/index.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="Js/slide.js"></script>
 <script>
     AOS.init();
-  </script>
+</script>
 </html> 
