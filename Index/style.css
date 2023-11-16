@@ -634,6 +634,7 @@ main{
     width: 200px;
     height: 160px;
     display: none;
+    z-index: 2;
 }
 
 #home-list a,#docs-list a{
@@ -672,6 +673,8 @@ main{
     height: 100%;
     top:0px;
     display: none;
+    z-index: 2;
+
 }
 
 
@@ -684,6 +687,8 @@ main{
     height: 376px;
     justify-content: space-between;
     display: none;
+    z-index: 2;
+
 }
 
 .shop-pages-list li,.product-pages-list li{
@@ -718,6 +723,7 @@ main{
     width: 1300px;
     height: 650px;
     display: none;
+    z-index: 2  ;
 }
 
 .pages-lists{
@@ -754,6 +760,7 @@ main{
 }
 
 #icon-list{
+    z-index: 2;
     position: absolute;
     top: 130px;
     display: flex;
@@ -893,8 +900,7 @@ main{
 }
 
 .slide{
-    display: flex;
-    height: 500px;
+    height: 480px;
     width: 85%;
 }
 .slide-left{
@@ -904,3 +910,4 @@ main{
 .slide-right{
     padding-left: 50%;
 }
+
