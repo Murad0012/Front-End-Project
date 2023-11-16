@@ -43,15 +43,18 @@
             <div class="header-bottom-container">
                 <ul class="header-bottom-left">
                     <li>Varkala</li>
-                    <li id = "home">Home  <i class="fa-solid fa-chevron-down" id = "home-arrow" style="color: #343a40;"></i></li>
-                    <div id="home-list">
-                        <a href="">Home 1 - Fashion</a>
-                        <a href="">Home 2 - Fashion</a>
-                        <a href="">Home 3 - Design <span class="new-icon">New</span></a>
-                        <a href="">Home 4 - Design <span class="new-icon">New</span></a>
+                    <div class = "home-container">
+                        <li id = "home">Home  <i class="fa-solid fa-chevron-down" id = "home-arrow" style="color: #343a40;"></i></li>
+                        <div id="home-list">
+                            <a href="">Home 1 - Fashion</a>
+                            <a href="">Home 2 - Fashion</a>
+                            <a href="">Home 3 - Design <span class="new-icon">New</span></a>
+                            <a href="">Home 4 - Design <span class="new-icon">New</span></a>
+                        </div>
                     </div>
 
-                    <li id = "shop">Shop <i id = "shop-arrow" class="fa-solid fa-chevron-down" style="color: #343a40;"></i></li>
+                    <div class="shop-container">
+                        <li id = "shop">Shop <i id = "shop-arrow" class="fa-solid fa-chevron-down" style="color: #343a40;"></i></li>
                     <div id="shop-list">
                             <ul class = "shop-pages-list">
                                 <h6>Shop pages</h6>
@@ -71,9 +74,11 @@
                             </ul>
                         <img src="Images_index/shop-img.jpg" alt="" style="width: 260px;height: 376px;object-fit:cover;">
                     </div>
+                    </div>
 
-                    <li id = "icon">Icons <i id = "icon-arrow" class="fa-solid fa-chevron-down" style="color: #343a40;"></i></li>
-                    <div id="icon-list">
+                    <div class="icon-container">
+                        <li id = "icon">Icons <i id = "icon-arrow" class="fa-solid fa-chevron-down" style="color: #343a40;"></i></li>
+                        <div id="icon-list">
                         <div class="icon-list-top">
                             <div class="icon-container">
                                 <i class="fa-solid fa-shirt fa-xl" style="color: #000000;"></i>
@@ -139,9 +144,11 @@
                         </div>
                         <div class="icon-list-bottom">Don't miss our biggest sales this year. Use the code "SUMMER35" at checkout until Jun. 15!</div>
                     </div>
-
-                    <li id = "page">Pages <i class="fa-solid fa-chevron-down" id = "page-arrow" style="color: #343a40;"></i></li>
-                    <div id="pages">
+                    </div>
+                    
+                    <div class="page-container">
+                        <li id = "page">Pages <i class="fa-solid fa-chevron-down" id = "page-arrow" style="color: #343a40;"></i></li>
+                        <div id="pages">
                         <div class="pages-lists">
                             <img src="Images_index/megamenu img1.jpg" alt="" style="width: 278px;height: 185px;">
                             <ul class="pages-list-inside">
@@ -215,7 +222,10 @@
                             </ul>
                         </div>
                     </div>
-                    
+                    </div>
+
+
+                    <div style = "position: relative;">
                     <li id = "docs">Docs <i class="fa-solid fa-chevron-down" id = "docs-arrow" style="color: #343a40;"></i></li>
                     <div id = "docs-list">
                         <a href="">Introduction </a>
@@ -226,6 +236,7 @@
                         <a href="">Changelog </a>
                         <a href="">Bootstrap </a>
                         <a href="">Theme</a>
+                    </div>
                     </div>
                 </ul>
     
@@ -239,17 +250,33 @@
                     <li><i class="fa-regular fa-user fa-xl" style="color: #343a40;"></i></li>
                     <li><i class="fa-regular fa-heart fa-xl" style="color: #343a40;"></i></li>
                     <li id = "basket"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #343a40;"></i></li>
+                    
                     <li id = "navbar">Navbar</li>
-                    <div class = "navbar-list">
-                        <h5>Varkala</h5>
+                    <div id = "navbar-list">
+                        <i id = "close-icon" class="fa-solid fa-x" style="color: #000000;margin-top: 45px;"></i>
+                        <div class="navbar-list-container">
+                        <h5 class="title1">Varkala</h5>
                         <a href="">Home</a>
                         <a href="">Link</a>
                         <a href="">Disabled</a>
-                        <a href="">Dropdown link<p id = "english">English <i class="fa-solid fa-chevron-down" style="color: #343a40;"></i></p></a>
+
+                        <div class="dropdown-list-container">
+                            <div href="" id = "dropdown">Dropdown link<i class="fa-solid fa-chevron-down" id = "dropdown-arrow" style="color: #868e96;margin-left: 10px;"></i></div>
+                            <div id="dropdown-list">
+                                <a href="">Action</a>
+                                <a href="">Another action</a>
+                                <a href="">Something else here</a>
+                            </div>
+                        </div>
+
                         <div class="icons">
+                            <i class="fa-brands fa-facebook-f" style="color: #000000;"></i>
+                            <i class="fa-brands fa-twitter" style="color: #000000;"></i>
+                            <i class="fa-solid fa-phone" style="color: #000000;"></i>
                             020-800-456-747
                         </div>
-                        <p>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
+                        <p class="paragraph3">Samsa was a travelling salesman - and above it there hung a <br> picture that he had recently cut out of an illustrated magazine <br> and housed in a nice, gilded frame.</p>
+                        </div>
                     </div>
                 </ul>
             </div>
@@ -257,13 +284,13 @@
     </header>
 
     <main>
-            <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style = "position: absolute; z-index: -1;right:1200px;top:-200px;width:800px;height:800px">
-                <path fill="#e0d4ab" d="M421,318.5Q366,397,279.5,420.5Q193,444,121,388Q49,332,72,251Q95,170,143,96.5Q191,23,251,87Q311,151,393.5,195.5Q476,240,421,318.5Z" />
-            </svg>
+        <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style = "position: absolute; z-index: -1;right:1200px;top:-450px;left:-450px;width:800px;height:800px">
+            <path fill="#e0d4ab" d="M421,318.5Q366,397,279.5,420.5Q193,444,121,388Q49,332,72,251Q95,170,143,96.5Q191,23,251,87Q311,151,393.5,195.5Q476,240,421,318.5Z" />
+        </svg>
             
-            <div class="swiper">
+        <div class="swiper">
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
+                  
                   <div class="swiper-slide">
                     <div class="slide">
                         <div class="slide-left">
@@ -271,7 +298,6 @@
                             <h2 class = "title">Design clocks on sale</h2>
                             <button class = "start-shopping button-light-effect">START SHOPPING</button>
                         </div>
-
                         <div class="slide-right">                          
                             <img src="Images_index/clock-transparent.png" alt="" style="width: 300px;height: 500px;object-fit: contain;">
                         </div>
@@ -286,7 +312,6 @@
                             <p class = "paragraph" style="margin-top: 15px;">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit</p>
                             <button class = "start-shopping button-light-effect">DISCOVER MORE</button>
                         </div>
-
                         <div class="slide-right">                          
                             <img src="Images_index/silder-img.png" alt="" style="width: 300px;height: 500px;object-fit: contain;">
                         </div>
@@ -301,7 +326,6 @@
                             <p class = "paragraph" style="margin-top: 15px;">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit</p>
                             <button class = "start-shopping button-light-effect">DISCOVER MORE</button>
                         </div>
-
                         <div class="slide-right">                          
                             <img src="Images_index/slide-img3.png" alt="" style="width: 300px;height: 500px;object-fit: contain;">
                         </div>
@@ -310,7 +334,7 @@
                   ...
                 </div>
                 <div class="swiper-pagination"></div>
-              </div>
+        </div>
 
         <div class="top-choices">
             <div class="top-choices-container">

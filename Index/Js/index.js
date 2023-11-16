@@ -143,4 +143,36 @@ icon.onclick = function(){
     }      
 }
 
+const list = document.getElementById("dropdown-list")
+const dropDown = document.getElementById("dropdown")
+const dropArrow = document.getElementById("dropdown-arrow")
+
+let dropDownOpen = true
+
+
+dropDown.onclick = function (){
+    if(dropDownOpen){
+        list.style.height = "100px"
+        dropArrow.style.rotate = "-180deg"
+        dropDownOpen = false
+    }
+    else{
+        list.style.height = "0px"
+        dropArrow.style.rotate = "0deg"
+        dropDownOpen = true;
+    }      
+}
+
+const navbar = document.getElementById("navbar")
+const navbarList = document.getElementById("navbar-list")
+const close = document.getElementById("close-icon")
+
+
+navbar.onclick = function (){
+    navbarList.style.transform = "translateX(0px)"
+}
+
+close.onclick = function (){
+    navbarList.style.transform = "translateX(100%)"
+}
 
