@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     height: 55px;
-    width: 1450px;
+    width: 95%;
 }
 
 .header-top-left{
@@ -57,7 +57,7 @@
     justify-content: space-between;
     align-items: center;
     height: 48px;
-    width: 1450px;
+    width: 95%;
 }
 
 .header-bottom-left,.header-bottom-right{
@@ -301,7 +301,7 @@ main{
 }
 
 .new-arrivals-container{
-    width: 1140px;
+    width: 75%;
     display: flex;
     flex-direction: column;
 }
@@ -349,7 +349,7 @@ main{
 }
 
 .products-container{
-    width: 1140px;
+    width: 75%;
     display: grid;
     grid-template-columns: 262px 262px 262px 262px;
     grid-template-rows: 442px 442px;
@@ -377,7 +377,7 @@ main{
 }
 
 .summer-sales-container{
-    width: 1140px;
+    width: 75%;
     height: 430px;
     display: flex;
     flex-direction: column;
@@ -568,24 +568,6 @@ main{
     transform: scaleX(1);
 }
 
-
-#languages{
-    position:absolute;
-    top:55px;
-    right: 120px;
-    width: 160px;
-    height: 86px;
-    background-color: white;
-    box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
-    -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
-    -moz-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: none;
-}
-
 #languages a{
     text-decoration: none;
     margin-right:70px;
@@ -594,16 +576,24 @@ main{
     padding: 6.4px 24px;
 }
 
+#languages{
+    right: 120px;
+}
+
 #english-arrow,#usd-arrow,#home-arrow,#docs-arrow,#shop-arrow,#page-arrow,#icon-arrow,#dropdown-arrow{
     transition: 0.40s;
 }
 
 #money{
+    right: 55px;
+}
+
+#languages,#money{
     position:absolute;
     top:55px;
-    right: 55px;
     width: 160px;
     height: 86px;
+    z-index: 2;
     background-color: white;
     box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
     -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
@@ -612,8 +602,10 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: none;
+    display: none;  
 }
+
+
 
 #money a{
     text-decoration: none;
@@ -667,7 +659,6 @@ main{
 #shop-list{
     position: absolute;
     display: flex;
-    top:50px;
     width: 780px;
     height: 376px;
     justify-content: space-between;
@@ -901,7 +892,7 @@ main{
     position: relative;
 }
 
-#home-list{
+#home-list,#shop-list{
     top:50px
 }
 
@@ -962,4 +953,22 @@ main{
 
 #dropdown{
     color: #868e96;
+}
+
+#product-count{
+    position: absolute;
+    bottom: 14px;
+    left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #bcac76;
+    color: white;
+}
+
+.basket-container{
+    position: relative;
 }

@@ -249,10 +249,14 @@
                     </li>
                     <li><i class="fa-regular fa-user fa-xl" style="color: #343a40;"></i></li>
                     <li><i class="fa-regular fa-heart fa-xl" style="color: #343a40;"></i></li>
-                    <li id = "basket"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #343a40;"></i></li>
-                    
+
+                    <div class="basket-container">
+                        <div id = "product-count">0</div>
+                        <li id = "basket"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #343a40;"></i></li>
+                    </div>
+
                     <li id = "navbar">Navbar</li>
-                    <div id = "navbar-list">
+                    <div id = "navbar-list" style="display: none;">
                         <i id = "close-icon" class="fa-solid fa-x" style="color: #000000;margin-top: 45px;"></i>
                         <div class="navbar-list-container">
                         <h5 class="title1">Varkala</h5>
@@ -284,7 +288,7 @@
     </header>
 
     <main>
-        <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style = "position: absolute; z-index: -1;right:1200px;top:-450px;left:-450px;width:800px;height:800px">
+        <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style = "position: absolute; z-index: -1;top:-100px;left:-300px;width:800px;height:900px">
             <path fill="#e0d4ab" d="M421,318.5Q366,397,279.5,420.5Q193,444,121,388Q49,332,72,251Q95,170,143,96.5Q191,23,251,87Q311,151,393.5,195.5Q476,240,421,318.5Z" />
         </svg>
             
@@ -605,11 +609,11 @@
         </div>
 
         <div class="summer-sales">
-            <div class="summer-sales-container">
+            <div class="summer-sales-container" style="position: relative;">
                 <h4 class = "name4">Summer Sales</h4>
                 <h5 class="paragraph1">Our biggest sales this year — up to 60% off!</h5>
                 <button class="start-shopping1 button-black-effect">Start shopping</button>
-                <img src="Images_index/chair-transparent.png" alt="" style="position: absolute;width: 250px;height: 430px;right: 190px;">
+                <img src="Images_index/chair-transparent.png" alt="" style="position: absolute;width: 250px;height: 430px;left: 78%;">
             </div>
         </div>
 

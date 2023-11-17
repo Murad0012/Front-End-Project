@@ -173,6 +173,6 @@ navbar.onclick = function (){
 }
 
 close.onclick = function (){
-    navbarList.style.transform = "translateX(100%)"
+    navbarList.style.transform = "translateX(300%)"
 }
 
