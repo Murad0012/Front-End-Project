@@ -176,3 +176,52 @@ close.onclick = function (){
     navbarList.style.transform = "translateX(300%)"
 }
 
+const listShop = document.getElementById("footer-shop-list")
+const plus1 = document.getElementById("shop-plus")
+
+let shopListOpen = true
+
+
+plus1.onclick = function (){
+    if(shopListOpen){
+        listShop.style.height = "150px"
+        shopListOpen = false
+    }
+    else{
+        listShop.style.height = "0px"
+        shopListOpen = true;
+    }      
+}
+
+const companyList = document.getElementById("footer-company-list")
+const plus2 = document.getElementById("company-plus")
+
+let companyListOpen = true
+
+
+plus2.onclick = function (){
+    if(companyListOpen){
+        companyList.style.height = "150px"
+        companyListOpen = false
+    }
+    else{
+        companyList.style.height = "0px"
+        companyListOpen = true;
+    }      
+}
+
+const accountList = document.getElementById("footer-account-list")
+const plus3 = document.getElementById("account-plus")
+
+let accountListOpen = true
+
+plus3.onclick = function (){
+    if(accountListOpen){
+        accountList.style.height = "150px"
+        accountListOpen = false
+    }
+    else{
+        accountList.style.height = "0px"
+        accountListOpen = true;
+    }      
+}
