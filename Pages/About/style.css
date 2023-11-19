@@ -542,9 +542,7 @@ input{
 .footer{
     height: fit-content;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: row;
     margin-top: 80px;
     margin-bottom: 80px;
     width: 100%;
@@ -553,9 +551,7 @@ input{
 .footer-container{
     display: flex;
     width: 1140px;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .footer-gmail{
@@ -921,7 +917,7 @@ header{
     width: 100%;
 }
 
-.footer-line{
+.footer-line-list{
     display: none;
 }
 
@@ -964,6 +960,7 @@ header{
 }
 
 @media only screen and (max-width: 980px) {
+    
 
     .team-container{
         width: 700px;
@@ -1112,6 +1109,12 @@ header{
         justify-content: space-between;
     }
 
+    .footer-line-list{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
     .footer-line h3{
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -1166,7 +1169,7 @@ header{
 
     .right p{
         font-size: 1.25rem;
-        width: 510px;
+        width: 510px !important;
     }
 
     #img-left{
@@ -1266,6 +1269,17 @@ header{
     }
 
     .footer-container,.footer-line,.footer-gmail,.gmail-input{
-        width: 510px;
+        width: 700px;
+    }
+
+    .footer-gmail{
+        width: 700px;
+        margin-bottom: 30px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 0;
+        width: 700px;
     }
 } 
