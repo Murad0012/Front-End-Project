@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .header-top{
@@ -8,6 +9,7 @@
     background-color: #e9ecef;
     display: flex;
     justify-content: center;
+    max-width: 100%;
 }
 
 .header-top-container{
@@ -298,7 +300,7 @@ input{
 .milestones{
     background-color: #f8f9fa;
     margin-top: 80px;
-    height: 450px;
+    height: fit-content;
 }
 
 .history{
@@ -310,11 +312,30 @@ input{
     margin-top: 150px;
 }
 
+#product-count{
+    position: absolute;
+    bottom: 14px;
+    left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #bcac76;
+    color: white;
+}
+
 .about-us-container,.the-old-times-container,.history-container,.milestones-container,.samsa-container,.team-container,.info-container{
     width: 1140px;
     height: fit-content;
     display: flex;
     gap: 120px;
+}
+
+.milestones-container{
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .line{
@@ -339,7 +360,6 @@ input{
 .paragraph{
     font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
-    width: 540px;
     color: #868e96;
     line-height: 1.6;
     text-align: left;
@@ -520,31 +540,32 @@ input{
 }
 
 .footer{
-    height: 200px;
+    height: fit-content;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
     margin-top: 80px;
     margin-bottom: 80px;
+    width: 100%;
 }
 
 .footer-container{
     display: flex;
+    width: 1140px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 170px;
 }
 
 .footer-gmail{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 15px;  
 }
 
 .footer-list{
-    font-family: Arial, Helvetica, sans-serif;
-    
+    font-family: Arial, Helvetica, sans-serif;   
 }
 
 .footer-list ul li{
@@ -881,3 +902,370 @@ input{
     align-items: center;
     margin-right: 10px;
 }
+
+body{
+    max-width: 100%;
+}
+
+.middle{
+    gap: 30px;
+    margin-left: 20px;
+    display: none;
+}
+
+.middle li{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+}
+
+.footer-line{
+    display: none;
+}
+
+#footer-shop-list,#footer-company-list,#footer-account-list{
+    transition: 0.40s;
+}
+
+.footer-line-list ul{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #868e96;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 0;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+    .line{
+        display: none;
+    }
+
+    .history-container{
+        width: 960px;
+    }
+
+    .samsa-container{
+        width: 960px;
+    }
+
+    .samsa-paragraph-top{
+        width: 450px;
+        font-size: 2rem;
+    }
+
+    .footer-container{
+        width: 1100px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+    .team-container{
+        width: 700px;
+        margin-right: 280px;
+    }
+
+    .team-container .paragraph{
+        width: 700px;
+    }
+
+    .workers-profile{
+        gap:40px;
+    }
+
+    .samsa-img{
+        width: 594px;
+        height: 594px;
+    }
+
+    .home-container,.shop-container,.icon-container,.page-container,#docs,.search{
+        display: none;
+    }
+
+    .history-container{
+        width: 720px;
+    }
+
+    #img-left{
+        width: 210px !important;
+        height: 314px !important;
+    }
+
+    .history-right{
+        width: 380px;
+        height: 260px;
+    }
+
+    .grey-title{
+        font-size: 1rem;
+    }
+
+    #img-right{
+        width: 270px !important;
+        height: 180px !important;
+    }
+
+    .p2{
+        font-size: 1rem;
+    }
+
+    .hr2{
+        width: 390px !important;
+    }
+
+    .hc2{
+        gap:90px;
+    }
+
+    .samsa-container{
+        flex-direction: column;
+        width: 941px;
+        gap:50px
+    }
+
+    .samsa-left{
+        display: flex;
+        justify-content: center;
+    }
+
+    .samsa-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .samsa-paragraph-top{
+        width: 700px;
+        height: 200px;
+    }
+
+    .samsa-title{
+        width: 700px;
+        margin-bottom: 20px;
+    }
+
+    .samsa-paragraph-bottom{
+        width: 700px;
+    }
+
+    .info-bottom{
+        flex-direction: column;
+        width: 700px;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .info-bottom p{
+        width: 605px;
+    }
+
+    .info-title{
+        width: 700px;
+    }
+
+    .advantages-container{
+        flex-wrap: wrap;
+        width: 700px;
+    }
+
+    .milestones-container{
+        flex-direction: column;
+        align-items: center;
+        gap:70px;
+    }
+
+    .milestones-left,.milestones-right{
+        width: 700px;
+        margin-left: 0;
+    }
+
+    .milestones-left p{
+        width: 700px !important ;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 0;
+        width: 700px;
+    }
+
+    .footer{
+        margin-top: 25px;
+        margin-bottom: 110px;
+    }
+
+    .footer-list{
+        display: none;
+    }
+
+    .footer-line{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 700px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-line h3{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer-gmail{
+        width: 700px;
+        margin-bottom: 30px;
+    }
+
+    .gmail-input{
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-last-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .swiper{
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 760px){
+
+    .team-container{
+        width: 540px;
+        margin-right: auto;
+    }
+
+    .header-top-middle{
+        display: none;
+    }
+
+    .gold-title{
+        width: 510px;
+        font-size: 16px;
+    }
+
+    .black-title{
+        width: 510px;
+        font-size:2.7rem;
+        margin-top: 20px;
+        margin-bottom: 40px !important;
+    }
+
+    .team-container{
+        width: 540px;
+    }
+
+    .right p{
+        font-size: 1.25rem;
+        width: 510px;
+    }
+
+    #img-left{
+        width: 150px !important;
+        height: 224px !important;
+    }
+
+    .history-container{
+        gap: 40px;
+        width: 540px;
+    }
+
+    .milestones-container{
+        width: 510px;
+    }
+
+    .grey-title{
+        font-size: 16px;
+        width: 330px;
+    }
+
+    .history-container p{
+        width: 330px;
+        font-size: 1rem;
+    }
+
+    #img-right{
+        width: 150px !important;      
+        height: 100px !important;
+    }
+
+    .milestones-container{
+        flex-direction: column;
+        align-items: center;
+        gap:70px;
+    }
+
+    .milestones-left,.milestones-right{
+        width: 540px;
+        margin-left: 0;
+    }
+
+    .milestones-left p{
+        width: 540px !important ;
+    }
+
+    .right p{
+        height: 76px;
+        font-size: 1rem;
+    }
+    
+    .right{
+        width: 540px;
+    }
+
+    .workers-profile{
+        width: 560px;
+        gap: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .worker{
+        width: 270px;
+    }
+
+    .worker p{
+        width: 270px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-title{
+        width: 510px;
+    }
+
+    .samsa-img{
+        width: 414px;
+        height: 414px;
+    }
+
+    .samsa-container{
+        width: 510px;
+    }
+
+    .samsa-paragraph-top{
+        width: 510px;
+        height:255px
+    }
+
+    .samsa-title{
+        width: 510px;
+    }
+
+    .samsa-paragraph-bottom{
+        width: 510px;
+    }
+
+    .footer-container,.footer-line,.footer-gmail,.gmail-input{
+        width: 510px;
+    }
+} 

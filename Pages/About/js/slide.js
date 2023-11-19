@@ -7,6 +7,4 @@ var swiper = new Swiper(".mySwiper", {
   },
   loop: true,
   "--swiper-pagination-bullet-inactive-color": "#999999",
-
-
 });
