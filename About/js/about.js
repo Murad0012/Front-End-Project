@@ -169,11 +169,11 @@ const close = document.getElementById("close-icon")
 
 
 navbar.onclick = function (){
-    navbarList.style.transform = "translateX(0px)"
+    navbarList.style.display = "flex"
 }
 
 close.onclick = function (){
-    navbarList.style.transform = "translateX(300%)"
+    navbarList.style.display = "none"
 }
 
 const listShop = document.getElementById("footer-shop-list")
@@ -185,10 +185,12 @@ let shopListOpen = true
 plus1.onclick = function (){
     if(shopListOpen){
         listShop.style.height = "150px"
+        plus1.style.rotate = "45deg"
         shopListOpen = false
     }
     else{
         listShop.style.height = "0px"
+        plus1.style.rotate = "0deg"
         shopListOpen = true;
     }      
 }
@@ -202,10 +204,12 @@ let companyListOpen = true
 plus2.onclick = function (){
     if(companyListOpen){
         companyList.style.height = "150px"
+        plus2.style.rotate = "45deg"
         companyListOpen = false
     }
     else{
         companyList.style.height = "0px"
+        plus2.style.rotate = "0deg"
         companyListOpen = true;
     }      
 }
@@ -218,10 +222,13 @@ let accountListOpen = true
 plus3.onclick = function (){
     if(accountListOpen){
         accountList.style.height = "150px"
+        plus3.style.rotate = "45deg"
         accountListOpen = false
     }
     else{
         accountList.style.height = "0px"
+        plus3.style.rotate = "0deg"
         accountListOpen = true;
     }      
 }
+

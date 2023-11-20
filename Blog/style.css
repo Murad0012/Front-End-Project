@@ -299,6 +299,14 @@ input{
     font-size: 1.25rem;
 }
 
+.title-middle:hover{
+    text-decoration: underline;
+}
+
+#shop-plus,#company-plus,#account-plus{
+    transition: 0.20s;
+}
+
 .paragraph{
     color: #212529;
     font-size: 1.25rem;
@@ -487,6 +495,10 @@ input{
     justify-content: center;
 }
 
+#footer-shop-list,#footer-company-list,#footer-account-list{
+    transition: 0.40s;
+}
+
 .advantage-items-left{
     display: flex;
     align-items: center;
@@ -649,6 +661,107 @@ input{
     margin-bottom: 5px;
 }
 
+.footer-line-list{
+    display: none;
+}
+
+.footer-line-list ul{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #868e96;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 0;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 880px){
+
+    .footer-list{
+        display: none;
+    }
+
+    .footer-line-list{
+        display: flex;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 0;
+        width: 700px;
+    }
+
+    .footer-line{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 700px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-line-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-line h3{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer-gmail{
+        width: 700px;
+    }
+
+    .footer-last-container{
+        width: 700px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gmail-input{
+        width: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer{
+        height: fit-content;
+    }
+
+    .advantages-container{
+        flex-wrap: wrap;
+        width: 700px;
+    }
+
+    #home,#shop,#icon,#page,#docs,.search{
+        display: none;
+    }
+
+    .blog-container p{
+        width: 690px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .arrows-container{
+        width: 670px;
+    }
+
+    .items-container{
+        grid-template-columns: 306px 306px;
+        grid-template-rows: 300px 300px 300px;
+    }
+
+    .item img{
+        width: 330px;
+        height: 220px;
+    }
+    
+}
+
 .new-icon-page{
     font-size: 12px;
     padding: 3px;
@@ -702,9 +815,162 @@ input{
     box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
     -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
     -moz-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
-    
+}
+
+#navbar-list{
+    display: flex;
+    justify-content:center ;
+    position: fixed;
+    height: 100%;
+    display: none;
+    top:0px;
+    right: 0;
+    z-index: 2;
+    width: 520px;
+}
+
+.navbar-list-container{
+    height: 400px;  
+    margin-top: 100px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navbar-list-container a{
+    text-decoration: none;
+    color: #868e96;
+}
+
+.navbar-list-container h5{
+    margin-bottom: 40px;
+}
+
+#dropdown-list{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-left: 20px;
+    margin-top: 18px;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.20s;
+}
+
+#dropdown:hover #dropdown-list{
+    height: 0px;
+}
+
+#dropdown{
+    color: #868e96;
+}
+
+.title1,.title2-margin-left{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    font-size: 1.85rem;
 }
 
 .home-container,.shop-container,.icon-container,.page-container{
     position: relative;
+}
+
+@media only screen and (max-width: 770px){
+
+    .header-top-middle{
+        display: none;
+    }
+
+    .footer-list{
+        display: none;
+    }
+
+    .footer-line-list{
+        display: flex;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 0;
+        width: 510px;
+    }
+
+    .footer-line{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 510px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-line-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-line h3{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer-gmail{
+        width: 510px;
+    }
+
+    .footer-last-container{
+        width: 510px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gmail-input{
+        width: 510px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer{
+        height: fit-content;
+    }
+
+    .advantages-container{
+        flex-wrap: wrap;
+        width: 510px;
+    }
+
+    #home,#shop,#icon,#page,#docs,.search{
+        display: none;
+    }
+
+    .blog-container p{
+        width: 510px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .arrows-container{
+        width: 670px;
+    }
+
+    .items-container{
+        grid-template-columns: 306px 306px;
+        grid-template-rows: 300px 300px 300px;
+        gap:0
+    }
+
+    .advantages{
+        margin-top: 0;
+    }
+
+    .footer-last-container{
+        font-size: 12px;
+    }
+
+    .item img{
+        width: 240px !important;
+        height: 160px !important;
+    }
 }
