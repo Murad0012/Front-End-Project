@@ -853,7 +853,7 @@ main{
 }
 
 
-#home-list,#docs-list,#navbar-list,#shop-list,#pages,#icon-list{
+#home-list,#docs-list,#navbar-list,#shop-list,#pages,#icon-list,#basket-list{
     background-color: white;
     box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
     -webkit-box-shadow: 6px -6px 45px 5px rgba(0,0,0,0.11);
@@ -911,6 +911,10 @@ main{
     right: 0;
     z-index: 2;
     width: 520px;
+}
+
+#basket-list{
+    display: flex;
 }
 
 .navbar-list-container{
@@ -1027,7 +1031,8 @@ main{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@media only screen and (max-width: 1160px){
+
+@media only screen and (max-width: 1180px){
 
     .gmail-input{
         display: flex;
@@ -1132,6 +1137,10 @@ main{
 
     .title{
         width: 330px;
+    }
+
+    .basket-container{
+        margin-right: 300px;
     }
 
     .text{
@@ -1303,6 +1312,15 @@ main{
 }
 
 @media only screen and (max-width: 780px){
+
+    .basket-container{
+        margin-right: 220px;
+    }
+
+    .top-choices-container p{
+        width: 510px;
+    }
+
     .slide-left .title{
         font-size: 43px;
         width: 240px;
@@ -1435,4 +1453,8 @@ main{
     .gmail-input{
         width: 510px;
     }
+}
+
+@media only screen and (max-width: 580px){
+
 }

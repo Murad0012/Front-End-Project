@@ -677,6 +677,17 @@ input{
 }
 
 @media only screen and (max-width: 880px){
+    .arrows-container{
+        width: 680px !important;
+    }
+
+    .basket-container{
+        margin-right: 260px;
+    }
+
+    .blog-container p{
+        width: 690px !important;
+    }
 
     .footer-list{
         display: none;
@@ -877,7 +888,15 @@ input{
     position: relative;
 }
 
+
+
+
+
 @media only screen and (max-width: 770px){
+
+    .basket-container{
+        margin-right: 220px;
+    }
 
     .header-top-middle{
         display: none;
@@ -974,3 +993,94 @@ input{
         height: 160px !important;
     }
 }
+
+@media only screen and (max-width: 1180px){
+    .blog-container p{
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .items-container img{
+        width: 245px !important;
+        height: 165px !important;
+    }
+
+    .change{
+        width: 245px;
+    }
+
+    .items-container{
+        column-gap:20px;
+    }
+
+    .arrows-container{
+        width: 960px;
+    }
+
+    .footer-container{
+        
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .title-big{
+        font-size: 1.25rem;
+    }
+
+    .gold-small{
+        margin-bottom: 10px;
+    }
+
+    .blog-container p{
+        width: 510px;
+    }
+
+    .blog-container{
+        width: 510px;
+    }
+
+    .items-container{
+        grid-template-columns: 260px 260px;
+        grid-template-rows: 300px 300px 300px 300px;
+        column-gap: 10px;
+    }
+
+    .arrows-container{
+        width: 510px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .items-container{
+        grid-template-columns: 510px;
+        grid-template-rows: 300px 300px 300px 300px;
+        row-gap: 10px;
+    }
+
+    #usd,#english{
+        display: none;
+    }
+
+    .item{
+        width: 490px;
+        align-items: center;
+    }
+
+    .advantages-container{
+        width: 400px;
+    }
+
+    .advantages{
+        height: 550px;
+    }
+
+    .footer-container,.footer-line,.footer-gmail,.gmail-input,.footer-last-container{
+        width: 400px;
+    }
+
+    .blog-container p{
+        width: 440px;
+    }
+}
+
